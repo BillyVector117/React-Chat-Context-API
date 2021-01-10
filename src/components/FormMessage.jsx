@@ -17,12 +17,13 @@ const FormMessage = () => {
   };
   return (
     /* fixed-botton coloca el contenido en el inferior, agrupar input con otro contenido (botón send), padding de 3 px y fondo negro  */
-    <form className="fixed-bottom input-group p-3 bg-dark" onSubmit={add}>
+    <form className="fixed-bottom input-group p-3 bg-dark mb-2 mt-5" onSubmit={add}>
       <input
         type="text"
         className="form-control"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
+        placeholder="Type your message"
       />
       {/* form-control styling the input */}
       <div className="input-group-append">

@@ -1,7 +1,15 @@
 .App {
   text-align: center;
 }
-
+body {
+  
+  background: linear-gradient(
+    90deg,
+    rgb(239, 238, 247) 0%,
+    rgb(84, 84, 177) 35%,
+    rgb(188, 211, 216) 100%
+  );
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,7 +35,9 @@
 .App-link {
   color: #61dafb;
 }
-
+.centerMessage {
+  margin-top: 75%;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

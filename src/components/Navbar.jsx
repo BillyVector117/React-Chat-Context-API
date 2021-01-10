@@ -5,7 +5,7 @@ const Navbar = () => {
   const { user, userSignIn, signOut } = useContext(chatContext);
   return (
     <div className="navbar navbar-light bg-light">
-      <span className="navbar-brand">Chat</span>
+      <span className="navbar-brand">Chat (Context-API)</span>
       <div>
         {user.active ? (
           <button className="btn btn-outline-danger my-2" onClick={signOut}>

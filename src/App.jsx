@@ -9,6 +9,7 @@ function App() {
   const { user, loading } = React.useContext(chatContext);
   React.useEffect(() => {
     console.log("loading is: ", loading);
+    
   }, [loading]);
   return user !== null ? (
     <div className="App">
@@ -20,7 +21,7 @@ function App() {
           </div>
         )}
         {user.active ? (
-          <div>
+          <div className="mt-2">
             <h3>Hello, {user.displayName}</h3> <Chat />
           </div>
         ) : (
